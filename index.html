@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo</title>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>todos</h1>
+        <form id="form">
+            <div id="searchbar">
+                <div id="hidden">
+                    <button type="button" id="completeAll" class="hiddenbutton">🔽</button>
+                </div>
+                <div>
+                    <input type="text" id="input" class="input" placeholder="What needs to be done?" autocomplete="off" />
+                </div>
+            </div>
+            <ul class="todos" id="todos">
+            </ul>
+            <footer id="foot" style="display: none">
+                <div id="itemsleft">Items left </div>
+                <button type="button" id="all">All</button>
+                <button type="button" id="active">Active</button>
+                <button type="button" id="comp">Completed</button>
+                <button type="button" id="rem" class="clearcomp">Clear completed</button>
+            </footer>
+        </form>
+    </body>
+</html>
